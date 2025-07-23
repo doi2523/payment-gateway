@@ -9,7 +9,7 @@ const DefaultLayout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] h-[100vh]">
+    <div className="grid grid-rows-[auto_1fr_auto]">
       {/* Fixed Header */}
       <Header />
       {/* Main Content with Scroll */}

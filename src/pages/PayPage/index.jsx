@@ -55,7 +55,7 @@ export default function PayPage() {
       setLoadingRecheck(false);
     }
   };
-    
+
   const handleCancelOrder = async ({ orderId, orderCode, onSuccess }) => {
     const confirmCancel = window.confirm(
       "Bạn có chắc chắn muốn huỷ giao dịch không?"
@@ -94,7 +94,7 @@ export default function PayPage() {
   }
 
   return (
-    <div className="bg-base-100 flex items-center justify-center h-2/3 py-5">
+    <div className="bg-base-100 flex items-center justify-center py-5">
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-base-100 shadow-2xl rounded-2xl p-6">
         {/* Bên trái: QR + thông tin cơ bản */}
         <div className="space-y-3 flex flex-col items-center">
