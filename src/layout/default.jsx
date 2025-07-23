@@ -13,7 +13,7 @@ const DefaultLayout = ({ children }) => {
       {/* Fixed Header */}
       <Header />
       {/* Main Content with Scroll */}
-      <main className="overflow-hidden bg-base-200 text-base-content relative">
+      <main className="overflow-auto bg-base-200 text-base-content relative">
         <div className="relative z-10">{children}</div>
       </main>
       {/* <Footer /> */}
