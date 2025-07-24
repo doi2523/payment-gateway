@@ -9,7 +9,7 @@ const Header = () => {
   if (location.pathname === "/") return null;
 
   return (
-    <header className="bg-base-100 navbar shadow-md flex items-center justify-between px-4 py-3 text-base-content">
+    <header className="bg-white w-full navbar shadow-md flex items-center justify-between px-4 py-3 text-base-content">
       <a
         href="https://locket-dio.space"
         target="_blank"
@@ -28,7 +28,12 @@ const Header = () => {
       </a>
 
       <div className="flex items-center gap-2">
-        {/* Thêm nút hoặc menu nếu cần */}
+        <img
+          src="https://cdn.locket-dio.space/v1/images/apple-touch-icon.png"
+          alt="Locket icon"
+          className="w-9 h-9 object-contain disable-select"
+          draggable="false"
+        />
       </div>
     </header>
   );
