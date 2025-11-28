@@ -341,15 +341,15 @@ export default function PayPage() {
               <span className="font-medium">Checkout URL:</span>{" "}
               <button
                 onClick={() => {
-                  navigator.clipboard.writeText(plan.checkoutUrl);
-                  setCopied("checkoutUrl");
+                  navigator.clipboard.writeText(plan.checkout_url);
+                  setCopied("checkout_url");
                   setTimeout(() => setCopied(false), 1500);
                 }}
                 className="text-blue-600 underline hover:text-blue-800 transition text-sm"
               >
                 Nhấp để sao chép
               </button>
-              {copied === "checkoutUrl" && (
+              {copied === "checkout_url" && (
                 <p className="text-xs text-green-600 mt-1">✓ Đã sao chép</p>
               )}
             </div>
